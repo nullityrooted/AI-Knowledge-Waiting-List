@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Knowledge Base Solutions</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom right, #e0f7fa, #f8f9fc);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+            max-width: 700px;
+            width: 100%;
+            transition: all 0.3s ease;
+        }
+        .container:hover {
+            box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.2);
+        }
+        h1 {
+            font-weight: 700;
+            color: #333;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        p.intro {
+            font-size: 18px;
+            color: #666;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 20px;
+            font-weight: 500;
+            color: #444;
+        }
+        input, select, textarea {
+            padding: 12px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: #4A90E2;
+            outline: none;
+            box-shadow: 0 0 5px rgba(74, 144, 226, 0.5);
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        button {
+            background-color: #4A90E2;
+            color: #ffffff;
+            border: none;
+            padding: 15px;
+            margin-top: 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #357ABD;
+        }
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .features label {
+            flex: 0 0 48%;
+            margin-top: 10px;
+            font-weight: 400;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AI Knowledge Base Solutions</h1>
+        <p class="intro">Empowering businesses with next-generation AI solutions for smarter knowledge management. Let us help you simplify, organize, and revolutionize your information processes.</p>
+        <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <label for="businessName">Business Name</label>
+            <input type="text" id="businessName" name="businessName" required>
+
+            <label for="contactName">Contact Name</label>
+            <input type="text" id="contactName" name="contactName" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="role">Role/Position</label>
+            <input type="text" id="role" name="role">
+
+            <label for="industry">Industry</label>
+            <select id="industry" name="industry">
+                <option value="">Select an option</option>
+                <option value="Tech">Tech</option>
+                <option value="Finance">Finance</option>
+                <option value="Healthcare">Healthcare</option>
+                <option value="Education">Education</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <label for="challenges">Current Knowledge Management Challenges</label>
+            <textarea id="challenges" name="challenges" rows="4"></textarea>
+
+            <label for="deployment">Preferred Deployment</label>
+            <select id="deployment" name="deployment">
+                <option value="">Select an option</option>
+                <option value="Cloud">Cloud</option>
+                <option value="On-Premise">On-Premise</option>
+            </select>
+
+            <label>Desired Features</label>
+            <div class="features">
+                <label><input type="checkbox" name="features" value="Knowledge Base Search"> Knowledge Base Search</label>
+                <label><input type="checkbox" name="features" value="Employee Onboarding"> Employee Onboarding</label>
+                <label><input type="checkbox" name="features" value="Automated FAQs"> Automated FAQs</label>
+                <label><input type="checkbox" name="features" value="Custom Features"> Custom Features</label>
+            </div>
+
+            <label for="budget">Budget Range</label>
+            <select id="budget" name="budget">
+                <option value="">Select an option</option>
+                <option value="Below $1,000">Below $1,000</option>
+                <option value="$1,000 - $5,000">$1,000 - $5,000</option>
+                <option value="$5,000 - $10,000">$5,000 - $10,000</option>
+                <option value="Above $10,000">Above $10,000</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
